@@ -61,6 +61,24 @@ h1 {
   flex-wrap: wrap;
 }
 
+.add-word-card {
+  margin-top: 0;
+}
+
+.add-word-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.add-word-form input {
+  flex: 1 1 140px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
 button {
   border: 1px solid #cbd5e1;
   border-radius: 8px;
