@@ -5,8 +5,8 @@ HTML + TypeScript で作ったシンプルな英単語帳アプリです。
 ## セットアップ
 
 ```bash
-npm install
-npm run build
+cd C:\Users\naoki\eitango
+npm.cmd run build
 ```
 
 ビルド後、`index.html` をブラウザで開くと利用できます。
