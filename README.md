@@ -17,6 +17,7 @@ npm run build
 - **次へ**: 次の単語へ移動
 - **シャッフル**: 単語順をランダム化して先頭から再開
 - **覚えた / まだ**: 学習状況カウントを更新し、次の単語へ進む
+- **単語を追加**: 画面下のフォームから英単語と意味を追加（追加分はブラウザに保存）
 
 ## ファイルごとの役割
 
@@ -25,7 +26,9 @@ npm run build
 - `/styles.css`
   - 最小限の見た目（カードUI、ボタン、文字サイズなど）
 - `/src/main.ts`
-  - 単語データ、画面描画、操作イベント、学習状態管理
+  - 画面描画、操作イベント、学習状態管理
+- `/src/words.ts`
+  - 初期表示で使う英単語データ
 - `/tsconfig.json`
   - TypeScript コンパイル設定（`src` -> `dist`）
 - `/package.json`
@@ -44,7 +47,8 @@ npm run build
 .
 ├── dist/            # build 後に生成される JavaScript
 ├── src/
-│   └── main.ts      # アプリ本体ロジック
+│   ├── main.ts      # アプリ本体ロジック
+│   └── words.ts     # 初期英単語データ
 ├── index.html       # エントリーページ
 ├── styles.css       # スタイル
 ├── package.json
